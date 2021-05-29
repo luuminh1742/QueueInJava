@@ -3,6 +3,8 @@ package utilities;
 import java.util.*;
 import java.util.concurrent.*;
 
+import test.TestConcurrentLinkedQueue;
+
 public class MyConcurrentLinkedQueue {
 
 	/**
@@ -14,6 +16,7 @@ public class MyConcurrentLinkedQueue {
 		// Khởi tạo 3 phần tử cho hàng đợi
 		ConcurrentLinkedQueue<String> clq = new ConcurrentLinkedQueue<String>(List.of("One", "Two", "Three"));
 		return clq;
+		
 	}
 
 	/**
@@ -266,4 +269,5 @@ public class MyConcurrentLinkedQueue {
 	public static boolean isEmpty(ConcurrentLinkedQueue<String> queue) {
 		return queue.isEmpty();
 	}
+	
 }

@@ -7,7 +7,7 @@ import utilities.MyConcurrentLinkedQueue;
 
 public class TestConcurrentLinkedQueue {
 
-	public static void f1Constructor() {
+	public static void testConstructor() {
 		// Create a ConcurrentLinkedQueue
 		// using ConcurrentLinkedQueue() contructor
 		ConcurrentLinkedQueue<String> clq = new ConcurrentLinkedQueue<String>();
@@ -25,7 +25,7 @@ public class TestConcurrentLinkedQueue {
 		System.out.println("ConcurrentLinkedQueue1: " + clq1);
 	}
 
-	public static void f2Add() {
+	public static void testAdd() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = new ConcurrentLinkedQueue<String>();
 		// Sử dụng phương thức addAll() theo ArrayList();
@@ -42,7 +42,7 @@ public class TestConcurrentLinkedQueue {
 		System.out.println("ConcurrentLinkedQueue2: " + clq2);
 	}
 
-	public static void f3Contains() {
+	public static void testContains() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = MyConcurrentLinkedQueue.createConcurrentLinkedQueue();
 		// Hiển thị ConcurrentLinkedQueue hiện có
@@ -55,7 +55,7 @@ public class TestConcurrentLinkedQueue {
 		}
 	}
 
-	public static void f4ForEach() {
+	public static void testForEach() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = MyConcurrentLinkedQueue.createConcurrentLinkedQueue();
 		// Phương thức in thông tin của các phần tử trong clq ra màn hình
@@ -63,7 +63,7 @@ public class TestConcurrentLinkedQueue {
 		MyConcurrentLinkedQueue.printQueueByForEach(clq);
 	}
 
-	public static void f5IsEmpty() {
+	public static void testIsEmpty() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = new ConcurrentLinkedQueue<String>();
 		// Kiểm tra xem hàng đợi trên có rỗng hay không sử dụng phương thức isEmpty()
@@ -75,14 +75,14 @@ public class TestConcurrentLinkedQueue {
 		}
 	}
 
-	public static void f6Interator() {
+	public static void testInterator() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = MyConcurrentLinkedQueue.createConcurrentLinkedQueue();
 		// In clq sử dụng interator()
 		MyConcurrentLinkedQueue.printQueueByIterator(clq);
 	}
 
-	public static void f7Offer() {
+	public static void testOffer() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = new ConcurrentLinkedQueue<String>();
 		// Sử dụng offer() để thêm phần tử vào clq
@@ -91,7 +91,7 @@ public class TestConcurrentLinkedQueue {
 		System.out.println(clq);
 	}
 
-	public static void f8Remove() {
+	public static void testRemove() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = MyConcurrentLinkedQueue.createConcurrentLinkedQueue();
 		// Hiển thị hàng đợi hiện có
@@ -102,7 +102,7 @@ public class TestConcurrentLinkedQueue {
 		System.out.println("Removed : " + clq);
 	}
 
-	public static void f9RemoveAll() {
+	public static void testRemoveAll() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = MyConcurrentLinkedQueue.createConcurrentLinkedQueue();
 		// Hiển thị hàng đợi hiện có
@@ -115,7 +115,7 @@ public class TestConcurrentLinkedQueue {
 		System.out.println("Removed : " + clq);
 	}
 
-	public static void f10RemoveIf() {
+	public static void testRemoveIf() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = MyConcurrentLinkedQueue.createConcurrentLinkedQueue();
 		// Hiển thị hàng đợi hiện có
@@ -127,14 +127,14 @@ public class TestConcurrentLinkedQueue {
 		System.out.println("Removed : " + clq);
 	}
 
-	public static void f11Spliterator() {
+	public static void testSpliterator() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = MyConcurrentLinkedQueue.createConcurrentLinkedQueue();
 		// Sử dụng Spliterator để in hàng đợi ra màn hình
 		MyConcurrentLinkedQueue.printQueueBySpliterator(clq);
 	}
 
-	public static void f12ToArray() {
+	public static void testToArray() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = MyConcurrentLinkedQueue.createConcurrentLinkedQueue();
 		// Hiển thị hàng đợi hiện có
@@ -169,6 +169,6 @@ public class TestConcurrentLinkedQueue {
 	}
 
 	public static void main(String[] args) {
-
+		System.out.println("Hello");
 	}
 }
