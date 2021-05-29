@@ -148,62 +148,6 @@ public class MyArrayBlockingQueue {
 	}
 
 	/**
-	 * Trả về giá trị đầu tiên của hàng đợi nếu hàng đợi không rỗng. Ngược lại trả
-	 * về thông báo lỗi <br>
-	 * Create by: BVHA (12/05/2021)
-	 * 
-	 * @param <E>
-	 * @param abq - Hàng đợi
-	 * @return
-	 */
-	public static <E> E getElementFirstByElement(ArrayBlockingQueue<E> abq) {
-		return abq.element();
-	}
-
-	/**
-	 * Trả về giá trị đầu tiên của hàng đợi nếu hàng đợi không rỗng. Ngược lại trả
-	 * về <i>Null</i><br>
-	 * Create by: BVHA (12/05/2021)
-	 * 
-	 * @param <E>
-	 * @param abq - Hàng đợi
-	 * @return
-	 */
-	public static <E> E getElementFirstByPeek(ArrayBlockingQueue<E> abq) {
-		return abq.peek();
-	}
-
-	/**
-	 * Phương trả về giá trị đầu tiên của hàng đợi, đồng thời loại bỏ giá trị đó
-	 * khỏi hàng đợi <br>
-	 * Trả về <i>null</i> khi hàng đợi rỗng Create by: BVHA (12/05/2021)
-	 * 
-	 * @param <E>
-	 * @param abq - Hàng đợi
-	 * @return
-	 */
-	public static <E> E getAndRemoveFirstElement(ArrayBlockingQueue<E> abq) {
-		return abq.poll();
-	}
-
-	/**
-	 * Phương thức trả về giá trị đầu tiên của hàng đợi. Thực hiện đợi khi hàng đợi
-	 * rỗng <br>
-	 * Create by: BVHA (12/05/2021)
-	 * 
-	 * @param <E>
-	 * @param abq  - Hàng đợi
-	 * @param time - Thời gian chờ
-	 * @param unit - Đơn vị tính thời gian chờ
-	 * @return
-	 * @throws InterruptedException
-	 */
-	public static <E> E getAndRemoveFirstElement(ArrayBlockingQueue<E> abq, long time, TimeUnit unit)
-			throws InterruptedException {
-		return abq.poll(time, unit);
-	}
-
-	/**
 	 * Phương thức loại bỏ một phần tử theo giá trị <b>e</b> tồn tại trong hàng đợi,
 	 * thứ tự từ FIFO. Trả về <i>True</i>nếu loại bỏ thành công, ngược lại trả về
 	 * <i>False</i> <br>
@@ -319,19 +263,6 @@ public class MyArrayBlockingQueue {
 	public static <E> int drainToCollection(ArrayBlockingQueue<E> abq, Collection<E> collec, int maxElements)
 			throws IOException {
 		return abq.drainTo(collec, maxElements);
-	}
-
-	/**
-	 * Phương thức kiểm tra hàng đợi có tồn tại giá trị. Trả về <i>True</i> nếu tồn
-	 * tại, ngược lại trả về <i>False</i> <br>
-	 * Create by: BVHA (12/05/2021)
-	 * 
-	 * @param <E>
-	 * @param abq - Hàng đợi
-	 * @return
-	 */
-	public static <E> boolean isEmpty(ArrayBlockingQueue<E> abq) {
-		return abq.isEmpty();
 	}
 
 	/**

@@ -149,74 +149,6 @@ public class TestArrayBlockingQueue {
 
 		// Thêm danh sách phần tử vào hàng đợi
 		MyArrayBlockingQueue.addAllElement(queue, list);
-
-		// Hiển thị hàng đợi
-		System.out.println("Hàng đợi 1: " + queue);
-		System.out.println("Giá trị vị trí đầu hàng đợi 1: " + MyArrayBlockingQueue.getElementFirstByPeek(queue));
-		System.out.println("Hàng đợi 1: " + queue);
-
-		// Hiển thị mảng rỗng
-		System.out.println("Hàng đợi 2: " + queue2);
-		System.out.println("Giá trị vị trí đầu hàng đợi 2: " + MyArrayBlockingQueue.getElementFirstByPeek(queue2));
-	}
-
-	public static void fn_element() {
-		// khởi tạo đối tượng
-		ArrayBlockingQueue<Integer> queue = TestArrayBlockingQueue.fn_arrayBlocking();
-		ArrayBlockingQueue<Integer> queue2 = MyArrayBlockingQueue.createArrayBlockingQueue(2);
-
-		// Hiển thị hàng đợi
-		System.out.println("Hàng đợi: " + queue);
-		System.out.println("Giá trị vị trí đầu hàng đợi 1: " + MyArrayBlockingQueue.getElementFirstByElement(queue));
-
-		// Hiển thị mảng rỗng
-		System.out.println("Hàng đợi 2: " + queue2);
-		System.out.println("Giá trị vị trí đầu hàng đợi 2: " + MyArrayBlockingQueue.getElementFirstByElement(queue2));
-	}
-
-	public static void fn_peek() {
-		// khởi tạo đối tượng
-		ArrayBlockingQueue<Integer> queue = TestArrayBlockingQueue.fn_arrayBlocking();
-		ArrayBlockingQueue<Integer> queue2 = MyArrayBlockingQueue.createArrayBlockingQueue(2);
-
-		// Hiển thị hàng đợi
-		System.out.println("Hàng đợi 1: " + queue);
-		System.out.println("Giá trị vị trí đầu hàng đợi 1: " + MyArrayBlockingQueue.getElementFirstByPeek(queue));
-		System.out.println("Hàng đợi 1: " + queue + "\n");
-
-		// Hiển thị mảng rỗng
-		System.out.println("Hàng đợi 2: " + queue2);
-		System.out.println("Giá trị vị trí đầu hàng đợi 2: " + MyArrayBlockingQueue.getElementFirstByPeek(queue2));
-	}
-
-	public static void fn_poll() {
-		// khởi tạo đối tượng
-		ArrayBlockingQueue<Integer> queue = TestArrayBlockingQueue.fn_arrayBlocking();
-		ArrayBlockingQueue<Integer> queue2 = MyArrayBlockingQueue.createArrayBlockingQueue(2);
-
-		// Hiển thị hàng đợi
-		System.out.println("Hàng đợi 1: " + queue);
-		System.out.println("Giá trị vị trí đầu hàng đợi 1: " + MyArrayBlockingQueue.getAndRemoveFirstElement(queue));
-		System.out.println("Hàng đợi 1: " + queue + "\n");
-
-		// Hiển thị mảng rỗng
-		System.out.println("Hàng đợi 2: " + queue2);
-		System.out.println("Giá trị vị trí đầu hàng đợi 2: " + MyArrayBlockingQueue.getAndRemoveFirstElement(queue2));
-	}
-
-	public static void fn_pollV2() {
-		// khởi tạo đối tượng
-		ArrayBlockingQueue<Integer> queue = TestArrayBlockingQueue.fn_arrayBlocking();
-		ArrayBlockingQueue<Integer> queue2 = MyArrayBlockingQueue.createArrayBlockingQueue(2);
-
-		// Hiển thị hàng đợi
-		System.out.println("Hàng đợi 1: " + queue);
-		System.out.println("Giá trị vị trí đầu hàng đợi 1: " + MyArrayBlockingQueue.getAndRemoveFirstElement(queue));
-		System.out.println("Hàng đợi 1: " + queue + "\n");
-
-		// Hiển thị mảng rỗng
-		System.out.println("Hàng đợi 2: " + queue2);
-		System.out.println("Giá trị vị trí đầu hàng đợi 2: " + MyArrayBlockingQueue.getAndRemoveFirstElement(queue2));
 	}
 
 	public static void fn_removeV2() {
@@ -316,15 +248,6 @@ public class TestArrayBlockingQueue {
 		}
 		System.out.println("Sau khi drainTo\n" + queue);
 		System.out.println("queue2: " + queue2);
-	}
-
-	public static void fn_IsEmpty() {
-		// khởi tạo đối tượng
-		ArrayBlockingQueue<Integer> queue = TestArrayBlockingQueue.fn_arrayBlocking();
-		ArrayBlockingQueue<Integer> queue2 = MyArrayBlockingQueue.createArrayBlockingQueue(2);
-
-		System.out.println("Hàng đợi 1: " + MyArrayBlockingQueue.isEmpty(queue));
-		System.out.println("Hàng đợi 2: " + MyArrayBlockingQueue.isEmpty(queue2));
 	}
 
 	public static void fn_ToArray() {
