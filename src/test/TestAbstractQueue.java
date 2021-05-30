@@ -20,11 +20,7 @@ public class TestAbstractQueue {
         AQ1.add(50);
   
         // print AQ
-        System.out.println("AbstractQueue contains : "
-                           + AQ1);
-        AbstractQueue<Integer> AQ2 = new LinkedBlockingQueue<Integer>(AQ1);
-        System.out.println("AbstractQueue contains : "
-                + AQ2);
+        System.out.println("AbstractQueue contains : " + AQ1);
 	}
 
 	public static void f2Add() {
