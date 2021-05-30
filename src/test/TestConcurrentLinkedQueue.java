@@ -148,7 +148,7 @@ public class TestConcurrentLinkedQueue {
 		}
 	}
 
-	public static void f13GetElement() {
+	public static void testGetElement() {
 		// Tạo một ConcurrentLinkedQueue
 		ConcurrentLinkedQueue<String> clq = MyConcurrentLinkedQueue.createConcurrentLinkedQueue();
 		// Hiển thị hàng đợi hiện có
